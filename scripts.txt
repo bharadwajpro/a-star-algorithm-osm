@@ -1,0 +1,5 @@
+"C:\Program Files (x86)\osmosis\bin\osmosis.bat" --read-xml file="hyderabad.osm" --write-pgsql host="localhost" database="hyderabad_map" user="postgres" password="123"
+
+"C:\Program Files (x86)\osmosis\bin\osmosis.bat" --read-xml file="hyderabad.osm" --write-pgsimp host="localhost" database="hyderabad_map" user="postgres" password="123"
+
+psql -d hyderabad_map -f "C:\Program Files (x86)\osmosis\script\pgsnapshot_schema_0.6.sql"
